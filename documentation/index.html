@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/font-awesome.css">
+        <link rel="stylesheet" href="css/style.css">
+
+        <link href="https://fonts.googleapis.com/css?family=Lato|Montserrat:100,200,300,400,500,600,700" rel="stylesheet">
+        <title>Watson Documentation</title>
+    </head>
+    <body>
+
+        <!--Main menu-->
+        <div class="menu">
+            <div class="container">
+                <div class="row">
+                    <div class="menu__wrapper col text-center">
+                        <div class="menu__brand">
+                            <p>Watson Template</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Main menu-->
+
+        <!--Documentation-->
+        <div class="documentation container">
+            <div class="row">
+                <div class="col-md-3 d-md-block d-none">
+                    <nav class="documentation__sidebar">
+                        <ul>
+                            <li><a class="active" href="#intro">Intro</a></li>
+                            <li><a href="#features">Features</a></li>
+                            <li><a href="#project">Project Structure</a></li>
+                            <li><a href="#html">HTML Structure</a></li>
+                            <li><a href="#css">CSS Structure</a></li>
+                            <li><a href="#js">JavaScript Structure</a></li>
+                            <li><a href="#fonts">Fonts</a></li>
+                            <li><a href="#source">Sources</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="col-md-9">
+                    <div class="documentation__content">
+
+                        <div id="intro" class="documentation__block">
+                            <h1>Watson</h1>
+                            <p class="sub-heading">Template Documentation v1.0</p>
+                            <hr>
+                            <ul>
+                                <li>created: 28/8/2018</li>
+                                <li>by: <a target="_blank" href="https://themeforest.net/user/cosmos-themes">Cosmos-Themes</a></li>
+                            </ul>
+                            <p class="thanks">Thank you for purchasing my theme. If you have any questions that are beyond the scope of this help file, please feel free to email via my user page contact form in themeforest.net. Thanks so much!</p>
+                            <hr>
+                        </div>
+
+                        <div id="features" class="documentation__block">
+                            <h2 id="features">Features</h2>
+                            <p>This template has everything that you need to easy develop minimal and modern portfolio:</p>
+                            <ul>
+                                <li>HTML5, CSS3, Jquery powered</li>
+                                <li>Semantically Correct / Valid HTML Code</li>
+                                <li>Latest Twitter Bootstrap</li>
+                                <li>36 Page Animations</li>
+                                <li>Fully Responsive Layout</li>
+                                <li>Cross browser compatible (Internet Explorer 11, Edge, Firefox, Safari, Opera, Chrome etc.)</li>
+                                <li>Modern and Clean Design</li>
+                                <li>2 Layouts(Dark, Light)</li>
+                                <li>10 Color Schemes</li>
+                                <li>Filterable Portfolio</li>
+                                <li>Ajax, Images, Video Portfolio items</li>
+                                <li>Easy To Use and Customize</li>
+                                <li>Google Web Fonts</li>
+                                <li>Google Map Ready</li>
+                            </ul>
+                        </div>
+
+                        <div id="project" class="documentation__block">
+                            <h2 id="projectstructure">Project Structure</h2>
+                            <p>Template has the following project structure:</p>
+                            <div class="file-tree">
+                                <ul>
+                                    <li><i class="far fa-folder" aria-hidden="true"></i>Documentation</li>
+                                    <li><i class="far fa-folder-open" aria-hidden="true"></i>Html
+                                        <ul>
+                                            <li><i class="far fa-folder" aria-hidden="true"></i>css</li>
+                                            <li><i class="far fa-folder" aria-hidden="true"></i>fonts</li>
+                                            <li><i class="far fa-folder" aria-hidden="true"></i>img</li>
+                                            <li><i class="far fa-folder" aria-hidden="true"></i>js</li>
+                                            <li><i class="far fa-file" aria-hidden="true"></i>index-dark.html</li>
+                                            <li><i class="far fa-file" aria-hidden="true"></i>index-light.html</li>
+                                            <li><i class="far fa-file" aria-hidden="true"></i>blog-dark.html</li>
+                                            <li><i class="far fa-file" aria-hidden="true"></i>blog-light.html</li>
+                                            <li><i class="far fa-file" aria-hidden="true"></i>single-work.html</li>
+                                            <li><i class="far fa-file" aria-hidden="true"></i>mail.php</li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                            <p></p>
+                        </div>
+                        <div id="html" class="documentation__block">
+                            <h2 id="htmlstructure">HTML Structure</h2>
+                            <p>All the html code are well <strong>documented</strong> for you to edit. Feel free to edit it to reach the result you want to get. Html-files use UTF-8 codepage. Use the editor with UTF-8 support to avoid problems with unreadable symbols.</p>
+
+                            <h3>Html Tag</h3>
+                            <pre class="prettyprint code-text linenums"><code class="prettyprint">&lt;html lang=&quot;en&quot; data-random-animation=&quot;false&quot; data-animation=&quot;1&quot;&gt;</code> </pre>
+                            <p>Html tag contain the vital information about the page transition animation. There are <strong>two</strong> types of attributes as follows:</p>
+                            <ol>
+                                <li><p><strong>data-random-animation</strong></p></li>
+                                <li><p><strong>data-animation</strong></p></li>
+                            </ol>
+                            <ol>
+                                <li><p><strong>data-random-animation</strong>: This attritute tell the scripts that the animation will be random. It has two values true and false. If the value is true then the animation will be random. If false the animation value is based on <strong>data-animation</strong>.</p></li>
+                                <li><p><strong>data-animation</strong>: This attribute has the value 1 to 36. It tell the script which animation to run. You can choose the animation value from the demo page and put the value in here. This attribute will only run when the <strong>data-random-animation</strong> has the value false.</p></li>
+                            </ol>
+                            <p class="alert alert-warning"><b>Note:</b> The values should be in quotes i.e "".</p>
+
+                            <h3>Head</h3>
+                            <p>Tags with metainformation are located inside <b>&lt;head&gt;</b> tag. Fill them to provide information
+                            about your website to search engines:</p>
+                            <pre class="prettyprint code-text linenums"><code class="prettyprint">&lt;meta name="keywords" content="" /&gt;
+&lt;meta name="description" content="" /&gt;
+&lt;meta name="author" content="" /&gt; </code></pre>
+
+                            <p>Also there is <strong>&lt;title&gt;</strong> tag is the title of your website.</p>
+                            <pre class="prettyprint code-text linenums"><code class="prettyprint">&lt;title&gt;Website Name&lt;/title&gt; </code></pre>
+
+                            <p><strong>&lt;link&gt;</strong> tags: These tags contains <strong>plugin.css</strong>, <strong>style.css</strong>, <strong>color.css</strong> see <strong>Css Structure</strong> for more information.</p>
+
+                            <h3>Body</h3>
+
+                            <p><strong>&lt;body&gt;</strong> tag contains the main website which users can view. It has following structure:</p>
+
+                            <pre class="prettyprint code-text linenums"><code class="prettyprint">&lt;body&gt;
+    &lt;div id="page"&gt;
+        &lt;header&gt;
+            &lt;!--Website Navigation Area--&gt;
+        &lt;/header&gt;
+        &lt;div id="main" class="site-main"&gt;
+            &lt;!--Website Sections Area--&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/body&gt; </code></pre>
+
+                            <p class="alert alert-warning"><strong>Note:</strong> The <strong>&lt;header&gt;</strong> and <strong>&lt;div id="main" class="site-main"&gt;</strong> should be inside <strong>&lt;div id="page"&gt;</strong>.</p>
+
+                            <h3>Header</h3>
+
+                            <p>Header tag contain code for website navigation area. It has structure as follows:</p>
+
+                            <pre class="prettyprint code-text linenums"><code class="prettyprint">&lt;header&gt;
+    &lt;div class="header-content"&gt;
+        &lt;div class="header-mobile"&gt;
+            &lt;!--Mobile Header--&gt;
+        &lt;/div&gt;
+        &lt;div class="header-main" data-simplebar&gt;
+            &lt;!--Site Main Header--&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/header&gt; </code></pre>
+
+                            <p><strong>&lt;div class="header-content"&gt;</strong>: Is the site header container both <strong>header-mobile</strong> and <strong>header-main</strong> should be inside <strong>header-content</strong>.</p>
+
+                            <h4>Header-Mobile</h4>
+
+                            <p>Is the header for mobile responsive of the website. It has the toggle button to toggle site main header in mobile devices.</p>
+
+                            <pre class="prettyprint code-text linenums"><code class="prettyprint">&lt;a class="header-toggle"&gt;&lt;i class="fas fa-bars"&gt;&lt;/i&gt;&lt;/a&gt; &lt;!--Toggle button--&gt;
+&lt;h2&gt;Your Name&lt;/h2&gt; &lt;!-- Should change the name to you own--&gt; </code></pre>
+
+                            <h4>Header-Main</h4>
+
+                            <p>Is the main header for the website. Its content are as follows:</p>
+
+                            <pre class="prettyprint code-text linenums"><code class="prettyprint">&lt;div class="image-container"&gt;
+    &lt;!-- Image and the Heading of the website --&gt;
+&lt;/div&gt;
+&lt;nav class="nav-menu"&gt;
+    &lt;!-- Navigation Links --&gt;
+&lt;/nav&gt;
+&lt;div class="nav-footer"&gt;
+    &lt;!-- Copyright and Social icon container --&gt;
+&lt;/div&gt; </code></pre>
+
+
+                            <p><strong>image-container</strong> : This area contains the image and the name. You should put your image and name in this area.</p>
+
+                            <pre class="prettyprint code-text linenums"><code class="prettyprint">&lt;div class="image-container"&gt;
+    &lt;h2 class="header-name"&gt;Your Name&lt;/h2&gt;
+    &lt;img src="image-link" alt="profile-pic"&gt;
+&lt;/div&gt; </code></pre>
+
+                            <p class="alert alert-warning"><strong>Note:-</strong> The image should of 500x500 resolution.</p>
+
+                            <p><strong>nav-menu</strong> : This area contains the navigation links for the website its content is as follow:</p>
+
+                            <pre class="prettyprint code-text linenums"><code class="prettyprint">&lt;ul&gt;
+    &lt;li&gt;&lt;a href="#home" class="pt-link active"&gt;&lt;span class="nav-menu-icon"&gt;&lt;i class="lnr lnr-home"&gt;&lt;/i&gt;&lt;/span&gt;Home &lt;/a&gt; &lt;/li&gt;
+    &lt;li&gt;&lt;a href="#about" class="pt-link"&gt;&lt;span class="nav-menu-icon"&gt;&lt;i class="lnr lnr-user"&gt;&lt;/i&gt;&lt;/span&gt;About Me&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="#resume" class="pt-link"&gt;&lt;span class="nav-menu-icon"&gt;&lt;i class="lnr lnr-license"&gt;&lt;/i&gt;&lt;/span&gt;Resume&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="#portfolio" class="pt-link"&gt;&lt;span class="nav-menu-icon"&gt;&lt;i class="lnr lnr-briefcase"&gt;&lt;/i&gt;&lt;/span&gt;Portfolio&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="#blog" class="pt-link"&gt;&lt;span class="nav-menu-icon"&gt;&lt;i class="lnr lnr-book"&gt;&lt;/i&gt;&lt;/span&gt;Blog&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="#contact" class="pt-link"&gt;&lt;span class="nav-menu-icon"&gt;&lt;i class="lnr lnr-envelope"&gt;&lt;/i&gt;&lt;/span&gt;Contact&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt; </code></pre>
+
+                            <p>The <strong>&lt;a&gt;</strong> tags have the <strong>href</strong> value which corresponds to the page section <strong>id</strong> attribute.It also have the class of value <strong>pt-link</strong>, its important for the page transition to work. If you put href value other than section id it won't work and it should start with (<strong>#section-id-name</strong>). It also have the logo associated with the link to display.</p>
+
+                            <p><strong>nav-footer</strong> : This area contain the social links and the copyright text.</p>
+
+                            <pre class="prettyprint code-text linenums"><code class="prettyprint">&lt;ul class="social"&gt;
+    &lt;li&gt;&lt;a href="#"&gt;&lt;i class="fab fa-facebook-square"&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
+    &lt;!-- Other Links --&gt;
+&lt;/ul&gt;
+&lt;div class="copy"&gt;
+    &lt;p&gt;&amp;copy; 2018 Cosmos-Themes.&lt;br&gt;All Right Reserved.&lt;/p&gt;
+&lt;/div&gt;
+                            </code></pre>
+
+                            <h3>Main</h3>
+
+                            <p>This area contains the sections of the website. Structure as follows:</p>
+
+                            <pre class="prettyprint code-text linenums"><code class="prettyprint">&lt;div id="main" class="site-main"&gt;
+    &lt;section id="home"&gt;
+        &lt;!--Section content--&gt;
+    &lt;/section&gt;
+    &lt;section id="about"&gt;
+        &lt;!--Section content--&gt;
+    &lt;/section&gt;
+    &lt;section id="resume"&gt;
+        &lt;!--Section content--&gt;
+    &lt;/section&gt;
+    &lt;section id="portfolio"&gt;
+        &lt;!--Section content--&gt;
+    &lt;/section&gt;
+    &lt;section id="blog"&gt;
+        &lt;!--Section content--&gt;
+    &lt;/section&gt;
+    &lt;section id="contact"&gt;
+        &lt;!--Section content--&gt;
+    &lt;/section&gt;
+&lt;/div&gt; </code></pre>
+
+                            <p>The <strong>main</strong> div contain 6 sections corresponds to the links in the navigation.<br></p>
+                            <div class="alert alert-warning"><strong>Notes :</strong>
+                                <ol>
+                                    <li>Sections are documented well in html file so i'll document those which are complicated.</li>
+                                    <li>The section should have <strong>pt-page</strong> class for the layout.</li>
+                                    <li>The section should contain <strong>&lt;div class="section-container"&gt;</strong> for layout to render properly.</li>
+                                </ol>
+                            </div>
+
+                            <h3>Home Section</h3>
+                            <p>This section contain the background image, name, and some animated text you want to show on the website home page. See html file its easy to understand.</p>
+
+                            <h3>About Section</h3>
+                            <p>This section contains the introduction, personal information, services, clients, and testimonial sections.<br><br>
+                            <strong>signature</strong>: Signature image is transparent png with the resolution of approximate 450x100. If you have the your signature then resize to the desired resolution.
+                            If you dont have the signature of yours you can go to this site <a target="_blank" href="https://fontmeme.com/signature-fonts/">https://fontmeme.com/signature-fonts/</a> and make yours there. We have used font <strong>Signerica_Fat</strong> with the font size of <strong>40</strong>. Color black for white layout and color black for white layout. Its upto you which color you want.</p>
+
+                            <h3>Resume Section</h3>
+
+                            <p>This section contains your experience, education and skills you have.</p>
+
+                            <h4>Experience &amp; Eduction</h4>
+
+                            <pre class="prettyprint code-text linenums"><code class="prettyprint">&lt;li&gt;
+    &lt;span class="line-left"&gt;&lt;/span&gt;
+    &lt;div class="content"&gt;
+        &lt;h4&gt;&lt;!--Course or Position--&gt;&lt;/h4&gt; 
+        &lt;h5&gt;&lt;!--School or Company Name--&gt;&lt;/h5&gt;
+        &lt;p class="info"&gt;
+            &lt;!--Description--&gt;
+        &lt;/p&gt;
+    &lt;/div&gt;
+    &lt;span class="year"&gt;
+        &lt;span class="to"&gt;&lt;!--Year till--&gt;&lt;/span&gt;
+        &lt;span class="from"&gt;&lt;!--Year from--&gt;&lt;/span&gt;
+    &lt;/span&gt;
+&lt;/li&gt; </code></pre>
+
+
+                            <h4>Skill Item</h4>
+
+                            <pre class="prettyprint code-text linenums"><code class="prettyprint">&lt;div class="skill-item"&gt;
+    &lt;h4 class="progress-title"&gt;Coral Draw&lt;/h4&gt;&lt;!--Title of the skill--&gt;
+    &lt;div class="progress"&gt;
+        &lt;div class="progress-bar" data-progress-value="91"&gt;&lt;!--Value is the experience you gained--&gt;
+            &lt;div class="progress-value"&gt;91%&lt;/div&gt;&lt;!--Should edit it the same as above attribute value--&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt; </code></pre>
+
+
+
+                            <h3>Portfolio Section</h3>
+                            <p>This section contains the portfolio's items. It has the following structure:</p>
+
+                            <pre class="prettyprint code-text linenums"><code class="prettyprint">&lt;div class="section-container"&gt;
+    &lt;div class="page-heading"&gt;
+        &lt;!--Page Heading--&gt;
+    &lt;/div&gt;
+    &lt;div class="row"&gt;
+        &lt;div class="col-md-12 portfolio-filter text-center"&gt;
+            &lt;!--Portfolio Filter--&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="row portfolio-items"&gt;
+        &lt;div class="item col-lg-4 col-md-6 graphic"&gt;
+            &lt;!--Portfolio Item--&gt;
+        &lt;/div&gt;
+        &lt;!--Other Portfolio items--&gt;
+    &lt;/div&gt;
+&lt;/div&gt; </code></pre>
+
+                            <p>Portfolio Section have two parts: </p>
+
+                            <ol>
+                                <li><strong>Filters</strong></li>
+
+                                <li><strong>Portfolio item</strong></li>
+                            </ol>
+
+                            <h4>Portfolio Filters</h4>
+
+                            <pre class="prettyprint code-text linenums"><code class="prettyprint">&lt;ul&gt;
+    &lt;li class="active" data-filter="*"&gt;All&lt;/li&gt;
+    &lt;li data-filter=".brand"&gt;Brand&lt;/li&gt;
+    &lt;li data-filter=".design"&gt;Design&lt;/li&gt;
+    &lt;li data-filter=".graphic"&gt;Graphic&lt;/li&gt;
+&lt;/ul&gt; </code></pre>
+
+                            <p>Portfolio filters are the list item when clicked it will show portfolios related to those category.<br>
+                            <strong>data-filter</strong> : attribute specify the category the portfolios belongs to. It can have any value but thing to notice is that the
+                            value starts with <strong>".value"</strong>.</p>
+
+
+                            <h4>Portfolio Item</h4>
+
+                            <pre class="prettyprint code-text linenums"><code class="prettyprint">&lt;div class="item col-lg-4 col-sm-6 brand"&gt;
+    &lt;a class="image-link" href="img/portfolio/img-1.jpg"&gt;
+        &lt;figure&gt;
+            &lt;img src="img/portfolio/img-1.jpg" alt=""&gt;
+            &lt;figcaption&gt;
+                &lt;h4&gt;Book Design&lt;/h4&gt;
+                &lt;p&gt;Graphic&lt;/p&gt;
+            &lt;/figcaption&gt;
+        &lt;/figure&gt;
+    &lt;/a&gt;
+&lt;/div&gt; </code></pre>
+
+                            <p>Portfolio item is contain inside <strong>&lt;div&gt;</strong> tag. It have <strong>class</strong> attribute which value are <strong>item</strong> and <strong>brand</strong>, <strong>item</strong> is used for styling the portfolio single item 
+                            and <strong>brand</strong> is used to show which category the item belongs to in respect to the filter.<br><br>
+                            Portfolio item has inside <strong>anchor</strong> tag. This tag has <strong>class</strong> and <strong>href</strong> attribute. The <strong>class</strong> attribute specify 
+                            that the link is of <strong>image</strong> type. There are 3 possible values:</p>
+
+                            <ol>
+                                <li><strong>image-link</strong> : This tells the scripts to show as image type and will show as popup when click.</li>
+                                <li><strong>video-link</strong> : This tells the scripts to show as video type and will show as popup when click.</li>
+                                <li><strong>ajax-link</strong> : This tells the script to show as ajax type and slide in as a page. Ajax links are pages like <strong>single-work.html</strong> which the script will import when the item is clicked.</li>
+                            </ol>
+
+
+                            <h3>Blog Section</h3>
+
+                            <p>This section contains the blog items. It has the following structure:</p>
+
+                            <pre class="prettyprint code-text linenums"><code class="prettyprint">&lt;div class="section-container"&gt;
+    &lt;div class="page-heading"&gt;
+        &lt;!--Section Heading--&gt;
+    &lt;/div&gt;
+    &lt;div class="row blogs-masonry"&gt;
+        &lt;div class="col-lg-4 col-sm-6"&gt;
+            &lt;!--Blog Item--&gt;
+            &lt;a href="#" class="blog-item"&gt;
+                &lt;div class="blog-img"&gt;
+                    &lt;!--Blog Image--&gt;
+                &lt;/div&gt;
+                &lt;div class="blog-content"&gt;
+                    &lt;!--Blog Content--&gt;
+                &lt;/div&gt;
+            &lt;/a&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt; </code></pre>
+
+                            <p><strong>Blog</strong> item when click will open the link related to that blog item for example <strong>single-blog.html</strong> page.</p>
+
+
+                            <h3>Contact Section</h3>
+
+                            <p>This section contains <strong>contact form</strong>, <strong>contact information</strong> and <strong>google map</strong>.</p>
+
+                            <ol>
+                                <li><strong>Contact Form</strong> : Form contains the form fields for the user to send message. Form is based on ajax when submit the form will run the <strong>mail.php</strong> file. If everything is valid the mail will be send to the person whose email is specified in <strong>mail.php</strong> file.</li>
+                            </ol>
+
+                            <p class="alert alert-warning"><strong>Note</strong> : Edit this line in <strong>mail.php</strong></p>
+
+                            <pre class="prettyprint code-text linenums"><code class="prettyprint">$recipient = "example@example.com"; /*Change the email to your email id.*/
+                            </code></pre>
+
+                            <ol>
+                                <li><p><strong>Contact Information</strong> : This contains you address, phone, email id.</p></li>
+
+                                <li><p><strong>Google Map</strong> : This contain the google map where you are located.</p></li>
+                            </ol>
+
+                            <pre class="prettyprint code-text linenums"><code class="prettyprint">&lt;div id="map" data-latitude="-37.817214" data-longitude="144.955925" data-zoom="15"&gt;&lt;/div&gt; </code></pre>
+
+                            <p>Enter the latitude and longitude of your location in here. Search google for more information</p>
+                        </div>
+
+
+
+
+
+
+
+
+                        <div id="css" class="documentation__block">
+                            <h2>CSS Structure</h2>
+
+                            <div class="file-tree">
+                                <ul>
+                                    <li><i class="far fa-folder-open" aria-hidden="true"></i>css
+                                        <ul>
+                                            <li><i class="far fa-folder" aria-hidden="true"></i>plugins</li>
+                                            <li><i class="far fa-file" aria-hidden="true"></i>plugin.css</li>
+                                            <li><i class="far fa-file" aria-hidden="true"></i>style.css</li>
+                                            <li><i class="far fa-file" aria-hidden="true"></i>style-light.css</li>
+                                            <li><i class="far fa-file" aria-hidden="true"></i>*-color.css</li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div><br>
+                            <p><strong>plugins.css</strong>: This file contain the css library files which are located in <strong>plugins</strong> folder.<br><br>
+                            <strong>style.css</strong>: This file contain the dark layout style for the template.<br><br>
+                            <strong>style-light.css</strong>: This file contains the light layout style for the template.<br><br>
+                            <strong>(*-color.css)</strong>: This files are for choosing highlighed color of you own choice. There are 6 color file in this template.<br></p>
+                            <p class="alert alert-warning"><strong>Note</strong>: If you want to edit you the style i recommend you your own css file and link to the template of you choice. Edit above files only if you know what you are doing.</p>
+
+                        </div>
+
+                        <div id="js" class="documentation__block">
+                            <h2>Javascript Structure</h2>
+                            <div class="file-tree">
+                                <ul>
+                                    <li><i class="far fa-folder-open" aria-hidden="true"></i>js
+                                        <ul>
+                                            <li><i class="far fa-file" aria-hidden="true"></i>jquery.min.js</li>
+                                            <li><i class="far fa-file" aria-hidden="true"></i>modernizr.js</li>
+                                            <li><i class="far fa-file" aria-hidden="true"></i>plugins.min.js</li>
+                                            <li><i class="far fa-file" aria-hidden="true"></i>main.js</li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div><br>
+                            <p><strong>jquery.min.js</strong>: This file is jquery library.<br><br>
+                            <strong>modernizr.js</strong>: This file is javascript library that detect html5 and css3 features in various browsers.<br><br>
+                            <strong>plugins.min.js</strong>: This file contains various js library used in this template.<br><br>
+                            <strong>main.js</strong>: This file is main javascript file for this template.<br></p>
+                            <p class="alert alert-warning"><strong>Note</strong>: Editing these files can cause unexpected behaviour to the template only edit these file if you know what you are doing.</p>
+
+                        </div>
+
+                        <div id="fonts" class="documentation__block">
+                            <h2>Fonts</h2>
+                            <p>This template uses </p>
+                            <ul>
+                                <li>Google fonts:
+                                    <ul>
+                                        <li>Playfair Display</li>
+                                        <li>Roboto</li></ul>
+                                </li>
+                                <li>Icon fonts:
+                                    <ul>
+                                        <li>FontAwesome 5</li>
+                                        <li>Linearicons</li></ul>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div id="source" class="documentation__block">
+
+                            <h2>Sources and Credits</h2>
+
+                            <h3 id="cssandjavascriptslibraries">CSS and Javascripts Libraries</h3>
+
+                            <ul>
+                                <li><a href="https://jquery.com/">jQuery</a></li>
+                                <li><a href="https://getbootstrap.com/">Bootstrap 4</a></li>
+                                <li><a href="https://fontawesome.com/">FontAwesome 5</a></li>
+                                <li><a href="https://linearicons.com/">Linear Icons</a></li>
+                                <li><a href="https://codyhouse.co/demo/animated-headlines/">Animated Headlines</a></li>
+                                <li><a href="https://owlcarousel2.github.io/OwlCarousel2/">Owl Carousel 2</a></li>
+                                <li><a href="http://dimsemenov.com/plugins/magnific-popup/">Magnific Popup</a></li>
+                                <li><a href="https://rikschennink.github.io/fitty/">Fitty</a></li>
+                                <li><a href="http://grsmto.github.io/simplebar/">SimpleBar</a></li>
+                                <li><a href="https://isotope.metafizzy.co/">Isotope</a></li>
+                                <li><a href="https://gijsroge.github.io/tilt.js/">Tilt.js</a></li>
+                            </ul>
+
+                            <h3 id="images">Images</h3>
+
+                            <p><strong>Images are not included.</strong> All images are replaced with the placeholder. Images used in this template can be find at:</p>
+
+                            <ul>
+                                <li><a target="_blank" href="https://www.pexels.com/">Pexels</a></li>
+                                <li><a target="_blank" href="https://www.unsplash.com/">Unsplash</a></li>
+                                <li><a target="_blank" href="https://www.freepik.com/">Freepik</a></li>
+                                <li><a target="_blank" href="https://graphicburger.com/">GraphicBurger</a></li>
+                            </ul>
+                        </div>
+                        <hr>
+                        <p style="margin-bottom: 50px;">
+                        Once again, thank you so much for purchasing this template. As I said at the beginning, I'd be glad to help you if you have any questions relating to this theme. No guarantees, but I'll do my best to assist. If you have a more general question relating to the themes on ThemeForest, you might consider visiting my profile on themeforest and message me with the form section.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Documentation-->
+
+        <!--Footer-->
+        <footer class="footer">
+            <div class="container">
+                &copy; All Right Reserved, Cosmos-Themes.
+            </div>
+        </footer>
+        <!--Footer-->
+
+        <script src="js/plugins.js"></script>
+        <script src="js/main.js"></script>
+    </body>
+</html>
